@@ -1,7 +1,7 @@
 module Seahorse
   module Client
     class ParamValidator
-
+raise 'boom'
       # @param [Model::Shapes::Shape] shape
       # @param [Hash] params
       # @return [void]
