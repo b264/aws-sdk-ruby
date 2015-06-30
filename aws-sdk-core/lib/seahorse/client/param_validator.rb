@@ -47,6 +47,7 @@ module Seahorse
               member_shape = structure.member(name)
               shape(member_shape, value, errors, context + "[#{name.inspect}]")
             else
+              raise "Unexpected Value at #{context}[#{name.inspect}]: #{value} with structure #{structure}"
               errors << "unexpected value at #{context}[#{name.inspect}]: #{value}"
             end
           end
